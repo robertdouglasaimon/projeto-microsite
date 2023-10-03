@@ -1,0 +1,87 @@
+
+body {
+    color: white; /* Cor das letras do body*/
+    background-color: black; /* Cor do fundo*/
+    font-family: Arial, Helvetica, sans-serif; /*Modifica a fonte da página*/
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* tag para retirar as "bolinhas" */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
+}
+
+nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
+    color: #42a1be;
+}
+
+.container {
+    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
+}
+
+h1 {
+    color: #42a1be;
+        
+}
+
+.container1, h1 {
+    text-align: center;
+}
+
+.center { /*Sempre que for estilizar CLASS dentro de DIV, é preciso criar o  ".exemplo{}" por exemplo para a estilização da classe funcionar. Nesse caso aqui, a CLASS em questão é a CLASS "center" que foi colocada na DIV que será usada para estilizar a imagem de perfil.*/
+
+    text-align: center;
+    display: center;
+}
+main  {
+    width: 1090px;
+    height: 280px;
+    
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/* Rodapé */
+
+footer img {
+    width: 40px;
+    height: 40px;  
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer a {
+    margin: 24rem;
+    text-align: center;
+    
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.HH {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+
