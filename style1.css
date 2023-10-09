@@ -1,8 +1,9 @@
 
+@import url("http://fonts.googleapis.com/css2?family=Kanit&display=swap"); /*FONTE EXTERNA DO GOOGLE*/
 body {
     color: white; /* Cor das letras do body*/
     background-color: black; /* Cor do fundo*/
-    font-family: Arial, Helvetica, sans-serif; /*Modifica a fonte da página*/
+    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
     margin: 0;
     padding: 0;
 }
@@ -13,7 +14,8 @@ ul {
     list-style-type: none; /* tag para retirar as "bolinhas" */
     align-items: center; /* Alinha verticalmente ao centro */
     padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
+    flex-wrap: wrap;
 }
 
 a {
@@ -22,7 +24,9 @@ a {
 }
 
 nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
-    color: #42a1be;
+    background-color: #42a1be;
+    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
+    padding: 8px 16px;
 }
 
 .container {
@@ -64,11 +68,11 @@ footer img {
 footer {
     justify-content: center;
     display: flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
 }
 
 footer a {
-    margin: 24rem;
+    margin: 29rem;
     text-align: center;
     
 }
