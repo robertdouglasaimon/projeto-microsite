@@ -1,11 +1,9 @@
-
 @import url("http://fonts.googleapis.com/css2?family=Kanit&display=swap"); /*FONTE EXTERNA DO GOOGLE*/
 body {
     color: white; /* Cor das letras do body*/
     background-color: black; /* Cor do fundo*/
     font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
-    margin: 0;
-    padding: 0;
+
 }
 
 ul {
@@ -23,46 +21,34 @@ a {
     text-decoration: none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
 }
 
-nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
-    background-color: #42a1be;
-    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
-    padding: 8px 16px;
-}
-
-.container {
-    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
-}
-
-h1 {
-    color: #42a1be;
-        
-}
-
-.container1, h1 {
-    text-align: center;
+header img { /* Estilização da imagem de perfil*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5bbe42;
 }
 
 .center { /*Sempre que for estilizar CLASS dentro de DIV, é preciso criar o  ".exemplo{}" por exemplo para a estilização da classe funcionar. Nesse caso aqui, a CLASS em questão é a CLASS "center" que foi colocada na DIV que será usada para estilizar a imagem de perfil.*/
 
     text-align: center;
-    display: center;
-}
-main  {
-    width: 1090px;
-    height: 280px;
-    
 }
 
-h4 {
-    text-align: center;
+h1 {
+    color: #5bbe42;
+}
+
+.joy1 {
+    height: 180px;
 }
 
 
-/* Rodapé */
+
+/*Rodapé*/
 
 footer img {
     width: 40px;
-    height: 40px;  
+    height: 40px;
+    
 }
 
 footer {
@@ -72,20 +58,20 @@ footer {
 }
 
 footer a {
-    margin: 29rem;
+    margin: 20px;
     text-align: center;
-    
 }
 
 footer p {
     margin-top: 2px;
 }
 
-.HH {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    
+.container {
+    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
 }
 
-
+nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
+    background-color: #5bbe42;
+    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
+    padding: 8px 16px;
+}
