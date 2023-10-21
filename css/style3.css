@@ -74,6 +74,18 @@ footer {
     font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
 }
 
+.RobertDouglas2023 {
+    display: flex;
+    justify-content:center;
+    align-items: ;
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: "sanserif"; 
+    font-weight: 400; 
+    word-wrap: break-word
+    
+}
+
 footer a {
     margin: 12px;
     text-align: center;
