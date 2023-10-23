@@ -28,6 +28,7 @@ console.log
 
 
 // APLICANDO O EFEITO DE ROTAÇÃO DE IMAGEM NO ICONE COM A AJUDA DO CHAT GPT! //
+// EFEITO DE CARTA GIRANDO NA FOTO E NO FOOTER DO ''INICIO '' DO SITE //
 
 document.querySelectorAll('.icone').forEach((icone) => {
     icone.addEventListener('mouseover', () => {
@@ -35,6 +36,32 @@ document.querySelectorAll('.icone').forEach((icone) => {
     });
 
     icone.addEventListener('mouseout', () => {
+        icone.style.transform = 'rotateY(0deg)';
+    });
+});
+
+// Animação dos ícones do footer da página ''home.html / SOBRE MIM''
+document.querySelectorAll('.iconeimg .icone-link').forEach((icone) => {
+    icone.addEventListener('mouseover', () => {
+        icone.style.transform = 'rotateY(180deg)';
+    });
+
+    icone.addEventListener('mouseout', () => {
+        icone.style.transform = 'rotateY(0deg)';
+    });
+});
+
+
+
+// Animação dos ícones do footer da página ''project.html / PROJETOS''
+document.querySelectorAll('.container2').forEach((container) => {
+    const icone = container.querySelector('.icone-link');
+
+    container.addEventListener('mouseover', () => {
+        icone.style.transform = 'rotateY(180deg)';
+    });
+
+    container.addEventListener('mouseout', () => {
         icone.style.transform = 'rotateY(0deg)';
     });
 });

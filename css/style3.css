@@ -62,11 +62,28 @@ h4 {
 
 
 /* Rodapé */
-
-footer img {
-    width: 40px;
-    height: 40px;  
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinhar na parte inferior */
+    gap: 20px;
+    margin-top: 30px; /* Adiciona margem na parte superior e desce o elementos do footer. No caso, os icones do footer.*/
 }
+
+.container2 img {
+    width: 25px;
+    height: 25px; 
+    border: 2px solid #018DB0;
+    border-radius: 50%;
+/*EFEITO DE CARTA PARA GIRAR OS ICONES DO FOOTER NO CSS EM CONJUUNTO AO JS*/
+    cursor: pointer;
+    transition: transform 0.3s; /* Adiciona a transição para o efeito */
+}
+
+.container2 img:hover {
+    transform: rotateY(180deg);
+}
+/*-------------------------------------------------------------------------*/
 
 footer {
     justify-content: center;
@@ -74,14 +91,19 @@ footer {
     font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
 }
 
+footer img {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #018DB0;
+    border-radius: 50%;
+}
+
 .RobertDouglas2023 {
     display: flex;
     justify-content:center;
-    align-items: ;
     color: #ffffff; 
     font-size: 12px; 
     font-family: "sanserif"; 
-    font-weight: 400; 
     word-wrap: break-word
     
 }
@@ -98,15 +120,3 @@ footer p {
     margin-top: 1px;
 }
 
-.container2 {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    flex-wrap: wrap;
-    flex-flow:;
-    align-content:center;
-    gap: 2px;
-    column-gap:;
-
-}

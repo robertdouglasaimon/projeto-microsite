@@ -45,16 +45,28 @@ h1 {
 
 /*Rodapé*/
 
-footer img {
-    width: 40px;
-    height: 40px;
-    
+.iconeimg img{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #5bbe42;
+    border-radius: 50%;
+    transition: transform 0.3s;
 }
+
+/*  EFEITO DE ROTAÇÃO DOS ICONES DO FOOTER EM COJUNTO COM O JS  */
+.iconeimg:hover img {
+    transform: rotateY(180deg);
+}
+/*--------------------------------------------------------------*/
+
+
 
 footer {
     justify-content: center;
     display: flex;
     font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
+    gap: 20px;
+    align-items: center;
 }
 
 .RobertDouglas2023 {
