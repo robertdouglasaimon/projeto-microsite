@@ -1,0 +1,74 @@
+@import url("http://fonts.googleapis.com/css2?family=Kanit&display=swap"); /*FONTE EXTERNA DO GOOGLE*/
+body {
+    color: white; /* Cor das letras do body*/
+    background-color: black; /* Cor do fundo*/
+    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
+}
+
+/*MENU SUPERIOR E SEUS EFEITOS --------------------------------------------------------------------------------*/
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* tag para retirar as "bolinhas" */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
+    font-family: 'Kanit', sans-serif;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 0 50px; /* Adicione margem para separar os itens horizontalmente */
+    
+    
+}
+
+a {
+    color: white;
+    text-decoration: none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
+    padding: 8px 16px; /* Adicione preenchimento interno para separar os itens */
+    
+}
+
+nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
+    background-color: #da591d;
+    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
+    padding: 8px 16px;
+}
+
+li:hover {
+    transform: scale(1.1); /* Aplica um zoom de 110% no hover. Dá aquele efeito de zoom no elemento. */
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*FOOTER - RODAPÉ ----------*/
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.RobertDouglas2023 {
+    display: flex;
+    justify-content:center;
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: "sanserif"; 
+    word-wrap: break-word
+    
+}
+
+/*---------------------------*/
+
+@media screen and (max-width: 768px;){
+    .produto-container{
+        width: 100%;
+        flex-direction: column;
+    }
+}

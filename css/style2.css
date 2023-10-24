@@ -99,3 +99,63 @@ nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer ou
     border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
     padding: 8px 16px;
 }
+
+
+
+
+
+
+
+/*---------------------------MOBILE------------------------------*/
+
+/* NAV - MENU SUPERIOR */
+
+
+/* Estilos para a versão mobile (tela pequena) */
+@media screen and (max-width: 768px) {
+    /* Para a versão mobile, inicialmente oculte o menu de navegação */
+    .navbar ul {
+        display: none;
+    }
+
+    /* Estilize o ícone do menu de hambúrguer */
+    .menu-hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu-hamburger .bar {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 4px 0;
+    }
+
+    /* Estilize o menu de navegação ativo para a versão mobile */
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #19191d;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* No arquivo style2.css (style para home.html) */
+    .hamburger-icon-right {
+        position: absolute;
+        top: 10px;
+        right: 10px; /* Ajuste a posição direita conforme necessário */
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+}
+
+}
+

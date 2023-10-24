@@ -9,7 +9,7 @@ button.addEventListener('click', () => {
 });
 
 
-// Função adicionada com a ajuda do chatgrpt! Ainda estou estudando a base do javascript, logo, sozinho eu ainda não possuo o conhecimento para tal. Mas com a ajuda da AI, e com a explicação detalhada eu conseguir entender como funciona a interação do JS com o CSS e o corpo do HTML. Em breve adicionarei mais interações do JS nesse projeto, quanto mais eu for aprendendo, mais eu irei aplicando. //
+// Função adicionada com a ajuda do chatgpt! Ainda estou estudando a base do javascript, logo, sozinho eu ainda não possuo o conhecimento para tal. Mas com a ajuda da AI, e com a explicação detalhada eu conseguir entender como funciona a interação do JS com o CSS e o corpo do HTML. Em breve adicionarei mais interações do JS nesse projeto, quanto mais eu for aprendendo, mais eu irei aplicando. //
 
 
 // FAZENDO EFEITO DE ROTAÇÃO DA IMAGEM COM A AJUDA DO CHAT GPT! //
@@ -65,6 +65,35 @@ document.querySelectorAll('.container2').forEach((container) => {
         icone.style.transform = 'rotateY(0deg)';
     });
 });
+
+
+// MOBILE ------------------------------------------------------------------------//
+ // ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 1 - INDEX.HTML
+
+ function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+
+
+// MOBILE --------------------------------------------------------------------------//
+// ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 2 - HOME.HTML
+
+// No arquivo script.js
+function toggleMenuHome() {
+    const navMenu = document.querySelector('.navbar'); // Substitua 'nav-menu' por 'navbar' se você deseja ocultar o menu desktop
+    navMenu.classList.toggle('active');
+}
+
+// MOBILE --------------------------------------------------------------------------//
+// ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 3 - PROJECT.HTML
+
+// No arquivo script.js
+function toggleMenuProject() { // Mude o nome da função para evitar conflitos
+    const navMenu = document.querySelector('.navbar'); // Substitua 'nav-menu' por 'navbar' se você deseja ocultar o menu desktop
+    navMenu.classList.toggle('active');
+}
 
 
 
