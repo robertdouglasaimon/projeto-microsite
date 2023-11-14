@@ -247,7 +247,7 @@ header {
 .MinhaFotodePerfil {
     width: 100px; /* Largura da imagem */
     height: 100px; /* Altura da imagem */
-    border-radius: 50%; /* Moldura redonda */
+    border-radius:50%; /* Moldura redonda */
     margin-top: 20px; /* Espaço entre a imagem e o texto */
 }
 
@@ -274,10 +274,10 @@ header {
 /*--------------------------------*/
 
 .MinhaFotodePerfil {
-    width: 300px; /* Largura da imagem */
-    height: 300px; /* Altura da imagem */
+    width: 425px; /* Largura da imagem */
+    height: 425px; /* Altura da imagem */
     border-radius: 50%; /* Moldura redonda */ 
-    margin-left: 200px;
+    margin-left: 330px;
     margin-bottom: 100px;
     border: 2px solid #018DB0;
 }
