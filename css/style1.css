@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css2?family=Kanit&display=swap"); /*FONTE EXTERNA DO GOOGLE*/
+@import url('http://fonts.googleapis.com/css2?family=Kanit&display=swap'); /*FONTE EXTERNA DO GOOGLE*/
 
 *{
     
@@ -244,12 +244,6 @@ header {
     
 }
 
-.MinhaFotodePerfil {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    border-radius:50%; /* Moldura redonda */
-    margin-top: 20px; /* Espaço entre a imagem e o texto */
-}
 
 /*EFEITO DE ROTAÇÃO DA FOTO CSS - FUNCIONA EM CONJUNTO COM O JS*/
 
@@ -277,7 +271,8 @@ header {
     width: 425px; /* Largura da imagem */
     height: 425px; /* Altura da imagem */
     border-radius: 50%; /* Moldura redonda */ 
-    margin-left: 330px;
+    margin-top: 20px; /* Espaço entre a imagem e o texto */
+    margin-left: 210px;
     margin-bottom: 100px;
     border: 2px solid #018DB0;
 }
