@@ -12,7 +12,7 @@
 body {
     color: white; /* Cor das letras do body*/
     background-color: black; /* Cor do fundo*/
-    font-family: var(--font-destaque)
+    font-family: var(--font-destaque);
     margin: 0;
     padding: 0;
 }
