@@ -1,9 +1,17 @@
 @import url('http://fonts.googleapis.com/css2?family=Kanit&display=swap'); /*FONTE EXTERNA DO GOOGLE*/
+@font-face {
+    font-family: 'Kanit';
+    src: url(/fonts/Kanit-Bold.ttf);
+}
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque:'Kanit', sans-serif;  
+}
 body {
     color: white; /* Cor das letras do body*/
     background-color: black; /* Cor do fundo*/
-    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
-
+    font-family: var(--font-destaque);
 }
 
 ul {
@@ -12,7 +20,7 @@ ul {
     list-style-type: none; /* tag para retirar as "bolinhas" */
     align-items: center; /* Alinha verticalmente ao centro */
     padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--font-destaque)
     flex-wrap: wrap;
 }
 
