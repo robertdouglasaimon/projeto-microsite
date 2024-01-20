@@ -79,7 +79,7 @@ header {
     text-align:center; 
     color: #3BBADB; 
     font-size: 32px; 
-    font-family: var(--font-destaque)
+    font-family: var(--font-destaque);
     font-weight: 400; 
     line-height: 90px; 
     word-wrap: break-word"
@@ -92,7 +92,7 @@ header {
     justify-content: center;
     color: #018DB0; 
     font-size: 67px; 
-    font-family: var(--font-destaque) 
+    font-family: var(--font-destaque);
     font-weight: 700; 
     line-height: 77px; 
     word-wrap: break-word
@@ -120,7 +120,7 @@ header {
    display: inline-flex;
    color: #008AAA;
    font-size: 32px;
-   font-family:var(--font-destaque)
+   font-family:var(--font-destaque);
    font-weight: 400;
    word-wrap: break-word
    
@@ -134,7 +134,7 @@ header {
 
 .TEXTOCORPO1 {
     font-size: 24px; 
-    font-family: var(--font-destaque)
+    font-family: var(--font-destaque);
     font-weight: 500px; 
     word-wrap: break-word;
     color: #008AAA; 
@@ -291,7 +291,7 @@ header {
     align-self: stretch; 
     color: #ffffff; 
     font-size: 48px; 
-    font-family: var(--font-destaque) 
+    font-family: var(--font-destaque); 
     font-weight: 700; 
     line-height: 72px; 
     word-wrap: break-word;
@@ -302,7 +302,7 @@ header {
     align-self: stretch; 
     color: #828282; 
     font-size: 24px; 
-    font-family: var(--font-destaque) 
+    font-family: var(--font-destaque); 
     font-weight: 400; 
     line-height: 36px; 
     word-wrap: break-word;

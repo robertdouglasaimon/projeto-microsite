@@ -20,7 +20,7 @@ ul {
     list-style-type: none; /* tag para retirar as "bolinhas" */
     align-items: center; /* Alinha verticalmente ao centro */
     padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
-    font-family: var(--font-destaque)
+    font-family: var(--font-destaque);
     flex-wrap: wrap;
 }
 
