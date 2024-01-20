@@ -1,5 +1,5 @@
 
-@import url('http://fonts.googleapis.com/css2?family=Kanit&display=swap'); /*FONTE EXTERNA DO GOOGLE*/
+@charset "UTF-8";
 @font-face {
     font-family: 'Kanit';
     src: url(/fonts/Kanit-Bold.ttf);
