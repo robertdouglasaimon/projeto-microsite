@@ -291,7 +291,11 @@ header {
     align-self: stretch; 
     color: #ffffff; 
     font-size: 48px; 
+<<<<<<< HEAD
     font-family: var(--font-destaque); 
+=======
+    font-family: var(--font-destaque);
+>>>>>>> ca6f8125f880fbf1379190655d3e46ad2f2bf3df
     font-weight: 700; 
     line-height: 72px; 
     word-wrap: break-word;
@@ -302,7 +306,11 @@ header {
     align-self: stretch; 
     color: #828282; 
     font-size: 24px; 
+<<<<<<< HEAD
     font-family: var(--font-destaque); 
+=======
+    font-family: var(--font-destaque);
+>>>>>>> ca6f8125f880fbf1379190655d3e46ad2f2bf3df
     font-weight: 400; 
     line-height: 36px; 
     word-wrap: break-word;
