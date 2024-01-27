@@ -1,17 +1,23 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Kanit';
-    src: url(/fonts/Kanit-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sixtyfour&display=swap');
+
 
 :root {
     --font-padrao: Arial, Helvetica, sans-serif;
-    --font-destaque:'Kanit', sans-serif;  
+    --font-Honk:'Honk', system-ui;
+    --font-Inter:'Inter', sans-serif;
+    --font-Sixtyfour:'Sixtyfour', sans-serif;
+    --font-Oswald:'Oswald', sans-serif;
 }
+
+
 body {
     color: white; /* Cor das letras do body*/
     background-color: black; /* Cor do fundo*/
-    font-family: var(--font-destaque);
+    font-family: var(--font-Oswald);
 }
 
 ul {
@@ -20,9 +26,11 @@ ul {
     list-style-type: none; /* tag para retirar as "bolinhas" */
     align-items: center; /* Alinha verticalmente ao centro */
     padding: 16px;/*Para que ele tenha uma distancia um pouco maior de "cima" e da parte de "baixo" */
-    font-family: var(--font-destaque);
+    font-family: var(--font-Oswald);
     flex-wrap: wrap;
 }
+
+
 
 a {
     color: white;
@@ -43,6 +51,10 @@ header img { /* Estilização da imagem de perfil*/
 
 h1 {
     color: #5bbe42;
+}
+
+main {
+    font-family: var(--font-Inter);
 }
 
 .joy1 {
@@ -75,7 +87,7 @@ h1 {
 footer {
     justify-content: center;
     display: flex;
-    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
+    font-family: var(--font-Inter);
     gap: 20px;
     align-items: center;
 }
@@ -83,10 +95,9 @@ footer {
 .RobertDouglas2023 {
     display: flex;
     justify-content:center;
-    align-items: ;
     color: #ffffff; 
     font-size: 12px; 
-    font-family: "sanserif"; 
+    font-family: var(--font-Inter); 
     font-weight: 400; 
     word-wrap: break-word
     
@@ -95,6 +106,7 @@ footer {
 footer a {
     margin: 20px;
     text-align: center;
+    font-family: var(--font-Inter);
 }
 
 footer p {

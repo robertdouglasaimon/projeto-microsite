@@ -1,28 +1,32 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Kanit';
-    src: url(/fonts/Kanit-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sixtyfour&display=swap');
+
 
 :root {
     --font-padrao: Arial, Helvetica, sans-serif;
-    --font-destaque:'Kanit', sans-serif;  
+    --font-Honk:'Honk', system-ui;
+    --font-Inter:'Inter', sans-serif;
+    --font-Sixtyfour:'Sixtyfour', sans-serif;
+    --font-Oswald:'Oswald', sans-serif;
 }
 
-*{
-    
+* {
     padding: 0;
     margin: 0;
 
     box-sizing: border-box; /*Referente ao flexbox - Olhar no site: developer.mozila.org/en-US/docs/Web/CSS/box-sizing e estudar melhor como funciona o comportamento dessa função. Por enquanto, usarei para dar continuidade ao projeto. Depois eu reviso.*/
 
     font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
-
 }
+
 body {
-    width: 100%;
+    width: 99%;
     min-width: 100vh;
     background-color: #19191d;
+    font-family: var(--font-Oswald);
 
     /*background-image: url(img/Black\ Futuristic\ Technology\ Desktop\ Wallpaper.png); (Imagem de fundo)
     background-repeat: no-repeat; (Comando para não ficar repetindo a imagem de fundo acima.)
@@ -41,10 +45,6 @@ header {
     padding: 0px 20px; /* 0 superior e inferior(top e bottom), 20 esquerda e direita (left/right)*/
 }
 
-.logo {
-    width: ; /* Abri o comando mas não irei mexer na logo, o tamanho dela está ideal! Vou manter o código só para não perder o raciocinio.*/
-}
-
 .nav-menu {
     list-style: none; /*Remove o modo lista do menu.*/
     display: flex; /*Desativa de vez o modo lista (Mas esse comando funciona em conjunto com o de cima, não esquecer) e coloca um ao lado do outro.*/
@@ -57,6 +57,7 @@ header {
     padding: 8px 16px;
     font-size: 18px;
     flex-wrap: wrap;
+    font-family: var(--font-Oswald);
 }
 
 .nav-menu li a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
@@ -78,8 +79,8 @@ header {
     height: 100%; 
     text-align:center; 
     color: #3BBADB; 
-    font-size: 32px; 
-    font-family: var(--font-destaque);
+    font-size: 70px; 
+    font-family: var(--font-Honk);
     font-weight: 400; 
     line-height: 90px; 
     word-wrap: break-word"
@@ -92,7 +93,7 @@ header {
     justify-content: center;
     color: #018DB0; 
     font-size: 67px; 
-    font-family: var(--font-destaque);
+    font-family: var(--font-Oswald);
     font-weight: 700; 
     line-height: 77px; 
     word-wrap: break-word
@@ -249,6 +250,7 @@ header {
     padding: 20px;
     word-wrap: break-word;
     max-width: 50%;
+    font-family: var(--font-Oswald);
     
     
 }
@@ -291,11 +293,7 @@ header {
     align-self: stretch; 
     color: #ffffff; 
     font-size: 48px; 
-<<<<<<< HEAD
-    font-family: var(--font-destaque); 
-=======
-    font-family: var(--font-destaque);
->>>>>>> ca6f8125f880fbf1379190655d3e46ad2f2bf3df
+    font-family: var(--font-Oswald); 
     font-weight: 700; 
     line-height: 72px; 
     word-wrap: break-word;
@@ -306,11 +304,7 @@ header {
     align-self: stretch; 
     color: #828282; 
     font-size: 24px; 
-<<<<<<< HEAD
-    font-family: var(--font-destaque); 
-=======
-    font-family: var(--font-destaque);
->>>>>>> ca6f8125f880fbf1379190655d3e46ad2f2bf3df
+    font-family: var(--font-Oswald); 
     font-weight: 400; 
     line-height: 36px; 
     word-wrap: break-word;
@@ -355,7 +349,7 @@ header {
 .BotãoPrimario, .Texto {
     color: #ffffff; 
     font-size: 18px; 
-    font-family: Roboto; 
+    font-family: var(--font-Inter);
     font-weight: 500;
     line-height: 27px; 
     word-wrap: break-word
@@ -370,8 +364,7 @@ header {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: color 0.3s, transform 0.3s; box-shadow 0.3s;
-}
+ }
 
 .animated-button:hover {
     color: #bd6e07;
@@ -397,6 +390,7 @@ footer {
     gap: 3%;
     align-self: flex-end;
     position: absolute;
+    font-family: var(--font-Inter);
 }
 
 .icone {
@@ -404,6 +398,7 @@ footer {
     margin-bottom: 0 20px; /* Espaçamento entre os ícones */
     align-self: flex-end;
     font-size: small;
+    
     
 /*EFEITO DE CARTA GIRATORIA NOS ICONES DO CSS EM CONJUNTO DO JS*/
     transition: transform 0.3s; /* Adiciona a transição para o efeito */
@@ -418,6 +413,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--font-Inter);
     
 }
 
@@ -434,7 +430,7 @@ footer {
     text-align:center;
     color: white;
     font-size: 10px;
-    font-family: 'Kanit', sans-serif;
+    font-family: var(--font-Inter);
     bottom: 5px;
     width: 100%;
     margin-left: 6px;
