@@ -23,7 +23,7 @@
 }
 
 body {
-    width: 99%;
+    width: 100%;
     min-width: 100vh;
     background-color: #19191d;
     font-family: var(--font-Oswald);
@@ -283,7 +283,7 @@ header {
     height: 425px; /* Altura da imagem */
     border-radius: 50%; /* Moldura redonda */ 
     margin-top: 20px; /* Espaço entre a imagem e o texto */
-    margin-left: 210px;
+    margin-left: 180px;
     margin-bottom: 100px;
     border: 2px solid #018DB0;
 }
