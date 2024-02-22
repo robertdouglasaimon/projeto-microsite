@@ -18,8 +18,6 @@
     margin: 0;
 
     box-sizing: border-box; /*Referente ao flexbox - Olhar no site: developer.mozila.org/en-US/docs/Web/CSS/box-sizing e estudar melhor como funciona o comportamento dessa função. Por enquanto, usarei para dar continuidade ao projeto. Depois eu reviso.*/
-
-    font-family: "Kanit"/*NOME DA FONTE EXTERNA DO GOOGLE, CITADA LÁ EM CIMA!*/, sans-serif; /*Modifica a fonte da página.*/
 }
 
 body {
