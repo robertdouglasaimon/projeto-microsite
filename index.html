@@ -2,52 +2,52 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Robert Douglas - Início</title>
-    <link rel="icon" type="image/x-icon" href="src/assets/images/ROBERTDOUGLAS.ico">
-        
+    <link rel="icon" type="image/x-icon" href="src/assets/images/ROBERTDOUGLAS.ico">    
     <link rel="stylesheet" href="src/assets/css/style1.css">
 
 </head>
+<body>
  <!--ESTRUTURA PARA ADAPTAR A NAV A MOBILE -->
+ 
 <div class="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
- <!--------------------------------------------------------------------------------------------------->
-
-   <div class="produto-container"></div>   
-         <header>
-                <div>
+ <!---------------------------------------------------------------------------------------------------> 
+     <div class="nav-menu">
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
                     <a href="index.html">
                         <img src="src/assets/images/favicons/apple-touch-icon-76x76.png" alt="logo" class="logo">
                     </a>
-                </div>
-    
-                <ul class="nav-menu">
+            </div>
+    </div>
+            <nav>
+                <ul class="nav-menu active">
                     <li>
                         <a href="index.html">INÍCIO</a>
                     </li>
-    
                     <li>
                         <a href="home.html">SOBRE MIM</a>
                     </li>
-    
                     <li>
                         <a href="project.html">PROJETOS</a>
                     </li>
                 </ul>
-         </header>
+            </nav>
+        </header> 
+    </div>
     
      <!-------------------------------------------------------------------->
     
      <p class="title">
-    
+     <br>
      <div class="BemVindoAoMeuSite">Bem vindo!</div>
     
       </p>
     
       <div class="OláMeuNomeERobert">
-          Olá, meu nome é Robert, <br> sou aprendiz de <span  style="font-family:'Inter', sans-serif; color: rgb(209, 66, 23); font-weight: 700; line-height: 77px; word-wrap: break-word">HTML</span> <span  style="font-family:'Oswald', sans-serif; color: rgb(23, 156, 209); font-weight: 700; line-height: 77px; word-wrap: break-word">CSS</span> <br> <span style="color: #e4d658; font-size: 67px; font-family: 'Sixtyfour', sans-serif; font-weight: 700; line-height: 77px; word-wrap: break-word">e JavaScript.</span>
-    
-            <br>
+        <p>Olá! Sou <span style="font-family: var(--font-Sixtyfour); color: yellow;">Robert</span>, <br>um apaixonado por <span style="font-family: var(--font-Inter); color: orange;">tecnologia</span> e <br><span style="font-family: var(--font-padrao);color: rgb(0, 153, 255);">desenvolvimento web</span>.</p>
     
           <img src="src/assets/images/BADGES2.png" alt="Medalhas"  width="250">
     
@@ -59,12 +59,11 @@
     
             <p class="Titulo">Sobre mim</p>
     
-            <div class="Texto">Meu nome é <strong>Robert Douglas</strong> e sou apaixonado por tecnologia. Venho estudando bastante <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong> e tenho buscado aprender mais sobre tecnologias voltadas para o Front-End (Área na qual eu me identifico e curto demais). Gosto de brincar com o conhecimento que eu tenho até então, e de criar mini projetos para testar o que eu sei.</div>
+            <div class="Texto">Meu nome é <strong>Robert Douglas</strong> e este é meu currículo virtual. <br> Sou bacharel em <strong>Administração</strong> formado em 2017, possuo <br>uma sólida formação técnica, com cursos em <strong>Logística,</strong> <strong> <br>TI (Dev Front-End/MP/ICW [win10])</strong> e mais. <br> <br>Este site reúne meus projetos de programação, informações <br>sobre minha formação acadêmica e experiência profissional. <br>Fique à vontade para explorar e conhecer mais sobre mim e <br>meu trabalho.</div>
     
                     <br>
     
              <div class="BotãoPrimario">
-    
                 <div class="Text">
                     <a href="home.html">
                         <button class="animated-button">Saiba mais..</button>
@@ -72,44 +71,50 @@
                 </div>
              </div>
         </div>
-    
+        
+        <br>
         <!--FOTO DE PERFIL DA HOMEPAGE-------------------------------------------------------->
-        <img src="src/assets/images/profile-pic.png" alt="Minha Foto de Perfil" class="MinhaFotodePerfil">
+        <div class="FotoPerfil">
+            <img src="src/assets/images/profile-pic.png" alt="Minha Foto de Perfil" class="MinhaFotodePerfil">
+        </div>
         <!------------------------------------------------------------------------------------>
 
-        <br><br><br><br>
-
-    </body>
-        
+    <br><br><br><br>       
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      <!-------------------------------------------------------------------->
-    <footer><!--Rodapé da página. Não tem segredo.. É tudo que fica na parte INFERIOR do site, pode ser estilizado no CSS usando CLASS nos elementos que forem DENTRO dele.-->
-               <div class="icone">
-                        <a href="https://github.com/robertdouglasaimon" target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/images/github.svg" alt="github" class="icone-link">
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-                    <div class="icone">
-                        <a href="https://www.linkedin.com/in/robertdouglas2000/" target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/images/github.svg" alt="linkedin" class="icone-link">
-                            <p>Linkedin</p>
-                        </a>
-                    </div>
-                    <div class="icone" >
-                        <a href="https://www.instagram.com/rd_ciclo/" target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/images/github.svg" alt="instagram" class="icone-link">
-                            <p>Instagram</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          
-           <br>
+
+    </div>
+
+    <div class="icon-container">
+        <div class="icone">
+            <a href="https://github.com/robertdouglasaimon" target="_blank" rel="noopener noreferrer">
+                <img src="src/assets/images/github.svg" alt="github" class="icone-link">
+                <p>GitHub</p>
+             </a>
+        </div>
     
-    </footer>
-</div>
- <div class="marcaDagua">Todos os direitos reservados © Robert Douglas - 2023 </div>
- <script src="src/assets/js/script.js"></script>
+        <div class="icone">
+            <a href="https://www.linkedin.com/in/robertdouglas2000/" target="_blank" rel="noopener noreferrer">
+                <img src="src/assets/images/linkedin.svg" alt="linkedin" class="icone-link">
+                <p>Linkedin</p>
+            </a>
+        </div>
+    
+        <div class="icone" >
+            <a href="https://www.instagram.com/rd_ciclo/" target="_blank" rel="noopener noreferrer">
+                <img src="src/assets/images/insta.png" alt="instagram" class="icone-link">
+                <p>Instagram</p>
+            </a>
+        </div>
+
+    </div> 
+    
+<footer>   
+    <div class="marcaDagua">
+        Todos os direitos reservados © Robert Douglas - 2023 
+    </div>
+</footer>    
+</body>
+<script src="src/assets/js/script.js"></script>
 </html>
 

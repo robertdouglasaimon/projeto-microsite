@@ -75,16 +75,27 @@ document.querySelectorAll('.container2').forEach((container) => {
     navMenu.classList.toggle('active');
 }
 
+document.addEventListener('click', function(event) {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    
+    // Verifica se o clique não foi no menu ou no ícone do hamburger
+    if (!navMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+        navMenu.classList.remove('active'); // Fecha o menu
+    }
+});
 
 
 // MOBILE --------------------------------------------------------------------------//
 // ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 2 - HOME.HTML
 
 // No arquivo script.js
-function toggleMenuHome() {
-    const navMenu = document.querySelector('.navbar'); // Substitua 'nav-menu' por 'navbar' se você deseja ocultar o menu desktop
+// Para o arquivo index.html
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');
 }
+
 
 // MOBILE --------------------------------------------------------------------------//
 // ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 3 - PROJECT.HTML

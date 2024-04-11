@@ -16,56 +16,87 @@
 * {
     padding: 0;
     margin: 0;
-
-    box-sizing: border-box; /*Referente ao flexbox - Olhar no site: developer.mozila.org/en-US/docs/Web/CSS/box-sizing e estudar melhor como funciona o comportamento dessa função. Por enquanto, usarei para dar continuidade ao projeto. Depois eu reviso.*/
+    box-sizing: border-box; 
 }
 
 body {
     width: 100%;
-    min-width: 100vh;
+    min-width: 590px;
     background-color: #19191d;
     font-family: var(--font-Oswald);
-
-    /*background-image: url(img/Black\ Futuristic\ Technology\ Desktop\ Wallpaper.png); (Imagem de fundo)
-    background-repeat: no-repeat; (Comando para não ficar repetindo a imagem de fundo acima.)
-    background-size:cover;*/
-
+    overflow-x: hidden;
 }
 
+.logo-container {
+    position: fixed;
+    left: 30px; /* Define a distância da esquerda para a logo.
+    */
+}
 
 
 header {
+    position: relative;
     display: flex;
-    justify-content: space-between; /*Divide os conteudos em esquerda e direita. É o comando que manda os menus para o lado direito, caso eu me confunda.*/
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
     background-color: black;
-    align-items: center; /*Alinha os conteudos (tanto esquerda quanto direita) dentro de "header"*/
-    padding: 0px 20px; /* 0 superior e inferior(top e bottom), 20 esquerda e direita (left/right)*/
+    padding: 0px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .nav-menu {
-    list-style: none; /*Remove o modo lista do menu.*/
-    display: flex; /*Desativa de vez o modo lista (Mas esse comando funciona em conjunto com o de cima, não esquecer) e coloca um ao lado do outro.*/
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    width: 100%;
+    list-style: none;
+    top: 0; /* Mantém o header no topo da janela */
+    
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+   
+}
+
+.nav-menu li:last-child {
+    margin-left: 15px; /* Adiciona espaçamento entre os ultimos itens filhos do nav-menu*/
 }
 
 .nav-menu li a {
     text-decoration: none;
     color: white;
-    padding: 8px 16px;
     font-size: 18px;
-    flex-wrap: wrap;
     font-family: var(--font-Oswald);
 }
 
-.nav-menu li a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
+.nav-menu li a:hover {
     background-color: #1d638b;
-    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
-
+    border-bottom: 2px solid white; /* Aumenta a espessura da linha branca */
+    padding-bottom: 10px; /* Aumenta o espaçamento inferior */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hamburger-icon {
     display: none;
+    align-items: center;
    
 }
 
@@ -94,8 +125,7 @@ header {
     font-family: var(--font-Oswald);
     font-weight: 700; 
     line-height: 77px; 
-    word-wrap: break-word
-    
+    word-wrap: break-word  
 }
 
 
@@ -146,89 +176,6 @@ header {
     text-decoration:none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
 }
 
-/*   CONTAINERS DE 1 A 3   */
-
-/*.container1 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    flex-flow:;
-    align-content:center;
-    gap: 10px;
-    column-gap: 5px;
-}
-
-.container2 {
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    flex-wrap: wrap;
-    flex-flow:;
-    align-content:flex-end;
-    gap: 5px;
-    column-gap: 10px;
-}
-
-.container3 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-    flex-flow:;
-    align-content:center;
-    gap: 10px;
-    column-gap: 5px;
-}*/
-
-/*-------------------------*/
-
-
-
-
-
-/* CONTEUDO DAS DIV'S DE 1 A 6*/
-
-
-/*.conteudo1 {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-}
-
-.conteudo2 {
-    background-color:blue;
-    width: 200px;
-    height: 200px;
-}
-
-.conteudo3 {
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-}
-.conteudo4 {
-    background-color:green;
-    width: 200px;
-    height: 200px;
-}
-.conteudo5 {
-    background-color: white;
-    width: 200px;
-    height: 200px;
-}
-
-.conteudo6 {
-    background-color: orange;
-    width: 200px;
-    height: 200px;
-} */
-
-
-
 
 .PosicionadorDoSobreMim {
     display: flex;
@@ -248,9 +195,7 @@ header {
     padding: 20px;
     word-wrap: break-word;
     max-width: 50%;
-    font-family: var(--font-Oswald);
-    
-    
+    font-family: var(--font-Oswald);   
 }
 
 
@@ -372,23 +317,19 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/*--------------------------------------------------------------*/
 
-
-
-   /*Rodapé*/
-
-footer {
+.icon-container {
     display: flex;
-    justify-content: center;
-    background: #19191d;
-    padding: 0px 20px;
-    flex-direction:row; /* Alinhar horizontalmente */
-    width: 100%; /* Ocupar toda a largura da página */
-    gap: 3%;
-    align-self: flex-end;
-    position: absolute;
-    font-family: var(--font-Inter);
+    flex-direction: row; 
+    justify-content: left; 
+    margin-top: -35px; 
+    padding-left: 15px;
+    gap: 20px; 
+}
+
+/* Estilo adicional para separar os ícones do botão "Saiba mais" */
+.BotãoPrimario {
+    margin-bottom: 0px; 
 }
 
 .icone {
@@ -402,8 +343,6 @@ footer {
     transition: transform 0.3s; /* Adiciona a transição para o efeito */
     cursor: pointer; /* Altera o cursor para um indicador de link */
 }
-/*--------------------------------------------------------------*/
-
 
 .icone a {
     text-decoration: none;
@@ -419,8 +358,20 @@ footer {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin-bottom: 2px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 2px; 
     border: 2px solid #018DB0;
+}
+
+/*--Rodapé--------------------------------------------------*/
+
+footer {
+    display: block;
+    justify-content: center;
+    width: 100%; /* Ocupar toda a largura da página */
+    font-family: var(--font-Inter);
+    margin: auto 0;
+    padding: 18px;
+    padding-top: 30px;
 }
 
 .marcaDagua {
@@ -430,23 +381,29 @@ footer {
     font-size: 10px;
     font-family: var(--font-Inter);
     bottom: 5px;
-    width: 100%;
-    margin-left: 6px;
 }
 
+/*----------------------------------------------------------*/
 
 
 
 
 
 
-/*----------------------------MOBILE---------------------------------*/
 
-/* Estilos para a versão mobile */
-@media screen and (max-width: 768px) {
+
+/*--------RESPONSIVIDADE------------------------------------*/
+
+/* Estilos para a versão mobile ou telas menores! */
+@media screen and (max-width: 1170px) {
+
+    .logo-container {
+        display: none;
+    }
+
     .nav-menu {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 60px;
         right: 0;
         background-color: #19191d;
@@ -455,13 +412,12 @@ footer {
     }
 
     .nav-menu.active {
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction:column;        
     }
 
     .nav-menu ul {
         list-style: none;
-        padding: 0;
     }
 
     .nav-menu li {
@@ -475,6 +431,14 @@ footer {
         font-size: 18px;
     }
 
+    .icon-container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        margin:auto 0;
+        gap: 20px;
+    }
+
     .hamburger-icon {
         display: block;
         position: absolute;
@@ -485,27 +449,151 @@ footer {
         color: white;
     }
 
+    .BemVindoAoMeuSite {
+        width: 100%; 
+        height: 100%; 
+        text-align:center; 
+        color: #3BBADB; 
+        font-size: 70px; 
+        font-family: var(--font-Honk);
+        font-weight: 400; 
+        line-height: 90px; 
+        word-wrap: break-word"
+    }
     
+    .OláMeuNomeERobert {
+        width: 98%;
+        height: 98%; 
+        text-align:center;
+        justify-content: center;
+        color: #018DB0; 
+        font-size: 67px; 
+        font-family: var(--font-Oswald);
+        font-weight: 700; 
+        line-height: 77px; 
+        word-wrap: break-word  
+    }
 
-/*--------------------------------------------------------------------------------*/
+    .PosicionadorDoSobreMim {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centralizar verticalmente */
+        text-align: center;
+        width: 100%; 
+        height: 100%; 
+        background: #19191d
+        
+    }
+    
+    .SobreMim {
+        display: inline-flex; /* Adiciona o flexbox ao container do texto e da imagem */
+        flex-direction: column; /* Alinha os elementos na vertical */
+        justify-content: flex-start;
+        align-items:baseline;
+        background: #19191d;
+        padding: 20px;
+        word-wrap: break-word;
+        max-width: 50%;
+        font-family: var(--font-Oswald);   
+    }
 
-/*FOOTER - RODAPÉ -----------------------------------------------------------------*/
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
 
-/* Espaçamento entre o botão e o footer */
-.BotãoPrimario {
-    margin-top: 5px; /* Adicione margem acima do botão */
+    .MinhaFotodePerfil {
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+    }
+
+
+
+/*--Rodapé--------------------------------------------------*/
+
+    footer {
+        display: block;
+        justify-content: center;
+        width: 100%; /* Ocupar toda a largura da página */
+        font-family: var(--font-Inter);
+        margin: auto 0;
+        padding: 18px;
+        padding-top: 30px;
+    }
+
+    .marcaDagua {
+        flex-direction: column;
+        text-align:center;
+        color: white;
+        font-size: 10px;
+        font-family: var(--font-Inter);
+        bottom: 5px;
+    }
+
+}
+/*----------------------------------------------------------*/
+
+
+
+
+/*Config para ajustar o botão "Saiba mais.." em outros tamanhos de tela :D (infelizmente não consegui fazer ele ficar alinhado verticalmente no centro da page em dispositivos menores usando tecnicas de flex)*/
+@media screen and (max-width: 1170px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 165px;
+        margin-top: 5px;
+    }
 }
 
-  /* Adicione uma margem superior ao footer para afastá-lo do botão "Saiba mais" */
-  footer {
-    margin-top: 50px; /* Ajuste o valor conforme necessário */
-    margin-left: 235px;
-    margin-bottom: 110px;
-    height: 1%;
+
+@media screen and (max-width: 1025px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 140px;
+        margin-top: 5px;
+    }
 }
-   
+
+@media screen and (max-width: 890px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 110px;
+        margin-top: 5px;
+    }
 }
 
+@media screen and (max-width: 790px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 85px;
+        margin-top: 5px;
+    }
+}
 
-/*----------------------------------------------------------------------------------*/
-
+@media screen and (max-width: 637px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 45px;
+        margin-top: 5px;
+    }
+}
