@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/ROBERTDOUGLAS.ico">
+    <link rel="icon" type="image/x-icon" href="src/assets/images/ROBERTDOUGLAS.ico">
     <title>Robert Douglas - Sobre Mim</title>
   
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="src/assets/css/style2.css">
 
 </head>
 
 <body style="font-family: 'Kanit', sans-serif;">
     <!---ESTRUTURA PARA ADAPTAR A NAV A MOBILE ------------------------------------------------->
-        <div class="hamburger-icon hamburger-icon-right" onclick="toggleMenuHome()">&#9776;</div>   
+        <div class="hamburger-icon  hamburger-icon-right" onclick="toggleMenuHome()">&#9776;</div>   
     <!------------------------------------------------------------------------------------------>
  
-    <div class="container"> <!--Um tempo depois, percebi que era necessario colocar tudo dentro de uma DIV para resolver certos problemas chatinhos como.. Descolar o texto dos lados da tela, alinhas alguns paramentros da page, etc.. (fica a dica para a proxima vez, começa tacando tudo em uma div de cara, po! KKK')-->
-        <nav class="navbar">
+    <div class="container"> <!--Um tempo depois, percebi que era necessario colocar tudo dentro de uma DIV para resolver certos problemas chatinhos como.. Descolar o texto dos lados da tela, alinhar alguns paramentros da page, etc.. (fica a dica para a proxima vez, começa tacando tudo em uma div de cara, po! KKK')-->
+        <nav class="navbar active">
             <ul>            
-                <li><img src="icons/047house_101514.png" width="25" height="25"  alt="home">
+                <li><img src="src/assets/icons/047house_101514.png" width="25" height="25"  alt="home">
                     <a href="index.html">INÍCIO</a>
                     
                 </li>
-                <li><img src="icons/MIM.png" width="25" height="25"  alt="aboutme">
+                <li><img src="src/assets/icons/MIM.png" width="25" height="25"  alt="aboutme">
                     <a href="home.html">SOBRE MIM</a>
                 </li>
-                <li><img src="icons/PROJETOS-removebg-preview.png" width="25" height="25"  alt="projects">
+                <li><img src="src/assets/icons/PROJETOS-removebg-preview.png" width="25" height="25"  alt="projects">
                     <a href="project.html">PROJETOS</a>
                 </li>    
             </ul>
         </nav>
 
-    <header> <!--HEADER DE INTRODUÇÃO DA PAGE - A parte onde fica a foto, e as informações base superior sem ser a NAV.-->
-       
-        <div class="center"><!--DIV para estilizar essa imagem da forma que eu preferir via css. Mas o proposito aqui é mais centralizar a imagem mesmo.-->
-            <img src="images/profile-pic4.png"></img> 
+    <header>       
+        <div class="center">
+            <img src="src/assets/images/profile-pic4.png"></img> 
         </div>
 
         <h1>Robert Douglas</h1>
         <h2>Administrador /  Aux. Logístico / Desenvolvedor Front-End (Em construção)</h2>
     </header>
 
-    <main> <!--TAG usada para criar "section" ou sessões para postar a parte ativa do site. Em palavras simples: É a parte de artigos, textos, postagens, etc.. O conteudo central da parada mesmo.-->
+    <main> 
         <section>
             <h3>Sobre mim</h3>
             <p>
@@ -92,6 +91,7 @@
 
                 </ol>
              </p>
+
         </section>
 
              <h3 >Objetivo</h3>
@@ -99,38 +99,15 @@
                 Sou um cara que sempre gostou de TI, seja manutenção, restauração ou programação. No entanto, tinha receio de largar minha profissão atual e arriscar ir por esse caminho. Mas após alguns anos de trabalho, eu realmente entendi que não estava onde eu queria e que eu devia mudar de profissão. Por isso, estou me dedicando completamente a migrar para TI enquanto ainda trabalho na minha profissão atual. Atualmente estou com o foco <strong>TOTAL</strong> em estudar e dominar <strong>HTML, CSS, Javascript</strong> e futuramente <STRONG>React JS e VUE.</STRONG> De fato quero viver e me desenvolver atráves da tecnologia pois é algo que eu verdadeiramente amo e desde sempre me encantou!
              </p>
 
-             <img class="joy1"src="./images/joy.gif" alt="joy">
-            
-        </section>
+             <img class="joy1"src="src/assets/images/joy.gif" alt="joy"> 
+            </section>
 
     </main>
-
-    </div>
-</body>    
-
-<footer> <!--Rodapé da página. Não tem segredo.. É tudo que fica na parte INFERIOR do site, pode ser estilizado no CSS usando CLASS nos elementos que forem DENTRO dele.-->
-    <div class="iconeimg">
-        <a href="https://github.com/robertdouglasaimon" target="_blank" rel="noopener noreferrer">
-            <img src="./images/github.svg" alt="github" class="icone-link">
-            <p>GitHub</p>
-        </a>
     </div>
 
-    <div class="iconeimg">
-        <a href="https://www.linkedin.com/in/robertdouglas2000/" target="_blank" rel="noopener noreferrer">
-            <img src="./images/linkedin.svg" alt="linkedin" class="icone-link">
-            <p>Linkedin</p>
-        </a>
-    </div>
-
-    <div class="iconeimg" >
-        <a href="https://www.instagram.com/rd_ciclo/" target="_blank" rel="noopener noreferrer">
-            <img src="images/insta.png" alt="instagram" class="icone-link">
-            <p>Instagram</p>
-        </a>
-    </div>
-
+<footer> 
+    <div class="RobertDouglas2023">Todos os direitos reservados © Robert Douglas - 2023 </div>
 </footer>
-<div class="RobertDouglas2023">Todos os direitos reservados © Robert Douglas - 2023 </div>
-<script src="js/script.js"></script>
+</body>    
+<script src="src/assets/js/script.js"></script>
 </html>

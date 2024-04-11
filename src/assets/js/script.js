@@ -91,13 +91,23 @@ document.addEventListener('click', function(event) {
 
 // No arquivo script.js
 // Para o arquivo index.html
-function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
+function toggleMenuHome() {
+    const navMenu = document.querySelector('.navbar');
     navMenu.classList.toggle('active');
 }
 
+document.addEventListener('click', function(event) {
+    const navMenu = document.querySelector('.navbar');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    
+    // Verifica se o clique não foi no menu ou no ícone do hamburger
+    if (!navMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+        navMenu.classList.remove('active'); // Fecha o menu
+    }
+});
 
-// MOBILE --------------------------------------------------------------------------//
+
+// MOBILE --------------------------------------------------//
 // ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 3 - PROJECT.HTML
 
 // No arquivo script.js

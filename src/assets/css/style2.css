@@ -15,9 +15,17 @@
 
 
 body {
-    color: white; /* Cor das letras do body*/
-    background-color: black; /* Cor do fundo*/
+    color: white; 
+    background-color: black;
     font-family: var(--font-Oswald);
+    overflow-x: hidden;
+}
+
+
+nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
+    background-color: #5bbe42;
+    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
+    padding: 8px 16px;
 }
 
 ul {
@@ -35,6 +43,7 @@ ul {
 a {
     color: white;
     text-decoration: none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
+    font-size: 15px;
 }
 
 header img { /* Estilização da imagem de perfil*/
@@ -44,13 +53,49 @@ header img { /* Estilização da imagem de perfil*/
     border: 5px solid #5bbe42;
 }
 
-.center { /*Sempre que for estilizar CLASS dentro de DIV, é preciso criar o  ".exemplo{}" por exemplo para a estilização da classe funcionar. Nesse caso aqui, a CLASS em questão é a CLASS "center" que foi colocada na DIV que será usada para estilizar a imagem de perfil.*/
 
+
+.center { 
     text-align: center;
 }
 
+/* EFEITO DE GIRA A FOTO DO PERFIL IGUAL CARTA!---------*/
+.center {
+    animation: carta 1s linear;
+}
+
+@keyframes carta {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(720deg);
+    }
+}
+/*-------------------------------------------------------*/
+
+/*EFEITO DE CORES ENVOLTA DA FOTO PARA ANIMAR O EFEITO NEON--------------------------*/
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*----------------------------------------------------------*/
+
 h1 {
     color: #5bbe42;
+}
+
+h3 {
+    padding-top: 15px;
 }
 
 main {
@@ -59,30 +104,19 @@ main {
 
 .joy1 {
     height: 180px;
+    padding: 8px;
 }
 
 .hamburger-icon {
-    display:none;
-   
+    display: none;
+    align-items: center;
 }
 
-/*Rodapé*/
-
-.iconeimg img{
-    width: 25px;
-    height: 25px;
-    border: 2px solid #5bbe42;
-    border-radius: 50%;
-    transition: transform 0.3s;
+.container {
+    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
 }
 
-/*  EFEITO DE ROTAÇÃO DOS ICONES DO FOOTER EM COJUNTO COM O JS  */
-.iconeimg:hover img {
-    transform: rotateY(180deg);
-}
-/*--------------------------------------------------------------*/
-
-
+/*Rodapé --------------------------------------------------*/
 
 footer {
     justify-content: center;
@@ -96,43 +130,15 @@ footer {
     display: flex;
     justify-content:center;
     color: #ffffff; 
-    font-size: 12px; 
-    font-family: var(--font-Inter); 
+    font-size: 10px; 
+    font-family: var(--font-Inter);   
     font-weight: 400; 
+    padding: 10px;
     word-wrap: break-word
-    
-}
-
-footer a {
-    margin: 20px;
-    text-align: center;
-    font-family: var(--font-Inter);
-}
-
-footer p {
-    margin-top: 2px;
-}
-
-.container {
-    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
-}
-
-nav a:hover { /*Deixa o elemento de texto da NAV da cor verde, ou de qualquer outra cor que eu tenha escolhido ai abaixo.*/
-    background-color: #5bbe42;
-    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
-    padding: 8px 16px;
 }
 
 
-
-
-
-
-
-/*---------------------------MOBILE------------------------------*/
-
-/* NAV - MENU SUPERIOR */
-
+/*--------ESPONSIVIDADE/MOBILE-----------------------------*/
 
 /* Estilos para a versão mobile (tela pequena) */
 @media screen and (max-width: 768px) {
