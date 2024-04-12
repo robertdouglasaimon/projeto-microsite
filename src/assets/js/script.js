@@ -94,6 +94,7 @@ document.addEventListener('click', function(event) {
 function toggleMenuHome() {
     const navMenu = document.querySelector('.navbar');
     navMenu.classList.toggle('active');
+    navMenu.classList.remove('collapsed');
 }
 
 document.addEventListener('click', function(event) {
