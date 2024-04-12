@@ -112,11 +112,21 @@ document.addEventListener('click', function(event) {
 // ESTRUTURA PARA ADAPTAR A NAV A MOBILE - PAGINA 3 - PROJECT.HTML
 
 // No arquivo script.js
-function toggleMenuProject() { // Mude o nome da função para evitar conflitos
-    const navMenu = document.querySelector('.navbar'); // Substitua 'nav-menu' por 'navbar' se você deseja ocultar o menu desktop
+function toggleMenuProject() {
+    const navMenu = document.querySelector('.navbar');
     navMenu.classList.toggle('active');
+    navMenu.classList.remove('collapsed');
 }
 
+document.addEventListener('click', function(event) {
+    const navMenu = document.querySelector('.navbar');
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+    
+    // Verifica se o clique não foi no menu ou no ícone do hamburger
+    if (!navMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+        navMenu.classList.remove('active'); // Fecha o menu
+    }
+});
 
 
 
