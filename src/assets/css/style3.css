@@ -117,6 +117,54 @@ footer {
 
 
 /* Estilos para a versão mobile (tela pequena) */
+@media (max-width: 1024px) {
+
+    .banner > img {
+        display: none;
+    }
+
+    .container1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    .art {
+        max-width: 90%;
+    }
+    
+    .art h3 {
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; 
+      
+    }
+     
+    .art p {
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding-right: 80px;
+      margin: auto 0;
+    }
+
+    .art > img {
+        text-align: center;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 200px;
+  }
+}
+
+/*--------------------------------------------------------*/
+
+
 @media screen and (max-width: 768px) {
     /* Para a versão mobile, inicialmente oculte o menu de navegação */
     .navbar ul {
@@ -162,35 +210,33 @@ footer {
         color: white;
     }
 
-    
-    
-/*-----------------------------------------------------------*/ 
-
-
-
-/*BODY - CORPO TEXTO ------------------------------------------------------------*/
-/* Adicione este CSS ao seu arquivo style3.css */
-
-/* Estilos padrão para dispositivos maiores, como desktops */
-@media (max-width: 768px) {
-
     .banner > img {
         display: none;
     }
 
     .container1 {
         font-size: 65px;
+        text-align: center;
+        padding-left: 50px;
     }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 80px;
+    }
+
 
     .art {
         max-width: 68%;
+        padding: 30px 0px;
     }
     
     .art h3 {
       align-items: center;
       justify-content: center;
       font-size: 18px; 
-      padding-left: 250px;
+      
     }
      
     .art p {
@@ -206,11 +252,231 @@ footer {
         text-align: center;
     }
 
-    .RobertDouglas2023 {
-        display: flex;
-        margin: auto 0;
-        justify-content: center;
-    }
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 450px;
   }
 }
 /*--------------------------------------------------------*/
+
+@media screen and (max-width: 688px) {
+
+    .container1 {
+        font-size: 65px;
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 140px;
+    }
+
+
+    .art {
+        max-width: 68%;
+        padding: 30px 0px;
+    }
+    
+    .art h3 {
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; 
+      
+    }
+     
+    .art p {
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding-right: 150px;
+      margin: auto 0;
+    }
+
+    .art > img {
+        text-align: center;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 530px;
+  }
+}
+
+/*--------------------------------------------------------*/
+
+@media (max-width: 459px) {
+    h1 {
+        padding-right: 400px;
+    }
+
+    h2 {
+       padding-right: 430px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 430px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 350px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 790px;
+  }
+}
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+@media (max-width: 412px) {
+    h1 {
+        padding-left: 100px;
+    }
+
+    h2 {
+       padding-right: 445px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 445px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*------------------------------------------------*/
+
+@media (max-width: 393px) {
+    h1 {
+        padding-right: 500px;
+    }
+
+    h2 {
+       padding-right: 450px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 450px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*------------------------------------------------*/
+
+@media (max-width: 375px) {
+    h1 {
+        padding-right: 300px;
+    }
+
+    h2 {
+       padding-right: 480px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 480px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*---------------------------------------------------*/
+@media (max-width: 360px) {
+    h1 {
+        padding-left: 100px;
+    }
+
+    h2 {
+       padding-right: 480px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 480px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 350px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 850px;
+  }
+}
