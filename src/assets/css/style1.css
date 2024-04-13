@@ -1,0 +1,598 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sixtyfour&display=swap');
+
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-Honk:'Honk', system-ui;
+    --font-Inter:'Inter', sans-serif;
+    --font-Sixtyfour:'Sixtyfour', sans-serif;
+    --font-Oswald:'Oswald', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    width: 100%;
+    min-width: 590px;
+    background-color: #19191d;
+    font-family: var(--font-Oswald);
+    overflow-x: hidden;
+}
+
+.logo-container {
+    position: fixed;
+    left: 30px; /* Define a distância da esquerda para a logo.
+    */
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    padding: 0px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    width: 100%;
+    list-style: none;
+    top: 0; /* Mantém o header no topo da janela */
+    
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+   
+}
+
+.nav-menu li:last-child {
+    margin-left: 15px; /* Adiciona espaçamento entre os ultimos itens filhos do nav-menu*/
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: var(--font-Oswald);
+}
+
+.nav-menu li a:hover {
+    background-color: #1d638b;
+    border-bottom: 2px solid white; /* Aumenta a espessura da linha branca */
+    padding-bottom: 10px; /* Aumenta o espaçamento inferior */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hamburger-icon {
+    display: none;
+    align-items: center;
+}
+
+
+/*Conteúdo do CORPO*/
+
+.BemVindoAoMeuSite {
+    width: 100%; 
+    height: 100%; 
+    text-align:center; 
+    color: #3BBADB; 
+    font-size: 70px; 
+    font-family: var(--font-Honk);
+    font-weight: 400; 
+    line-height: 90px; 
+    word-wrap: break-word"
+}
+
+.OláMeuNomeERobert {
+    width: 100%;
+    height: 100%; 
+    text-align:center;
+    justify-content: center;
+    color: #018DB0; 
+    font-size: 67px; 
+    font-family: var(--font-Oswald);
+    font-weight: 700; 
+    line-height: 77px; 
+    word-wrap: break-word  
+}
+
+
+
+
+
+.Frame2 {
+   width:24,1%;
+   height: 100%; 
+   padding-left: 35px; 
+   padding-right: 35px; 
+   padding-top: 8px; 
+   padding-bottom: 8px; 
+   background: rgb(255, 255, 255); 
+   box-shadow: 0px 4px 4px rgba(0, 138, 170, 0.17);
+   border-radius: 8px; 
+   border: 2px #008AAA solid; 
+   justify-content: flex-start; 
+   align-items: flex-start; 
+   gap: 10px; 
+   display: inline-flex;
+   color: #008AAA;
+   font-size: 32px;
+   font-family:var(--font-destaque);
+   font-weight: 400;
+   word-wrap: break-word
+   
+   
+}
+
+.Frame2, a {
+    text-decoration:none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
+    
+}
+
+.TEXTOCORPO1 {
+    font-size: 24px; 
+    font-family: var(--font-destaque);
+    font-weight: 500px; 
+    word-wrap: break-word;
+    color: #008AAA; 
+    width: 100%; 
+    height: 100%  
+       
+}
+
+.TEXTOCORPO1, a {
+    text-decoration:none; /*Retira as linhas de baixo do texto que ta linkado deixando ele livre, natural.*/
+}
+
+
+.PosicionadorDoSobreMim {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    width: 100%; 
+    height: 100%; 
+    background: #19191d
+    
+}
+
+.SobreMim {
+    display: inline-flex; /* Adiciona o flexbox ao container do texto e da imagem */
+    flex-direction: column; /* Alinha os elementos na vertical */
+    justify-content: flex-start;
+    align-items:baseline;
+    background: #19191d;
+    padding: 20px;
+    word-wrap: break-word;
+    max-width: 50%;
+    font-family: var(--font-Oswald);   
+}
+
+
+/*EFEITO DE ROTAÇÃO DA FOTO CSS - FUNCIONA EM CONJUNTO COM O JS*/
+
+/* Define a classe de rotação */
+.girar {
+    animation: girar 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Define a animação de rotação */
+@keyframes girar {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg); /* Alterado de 180deg para 360deg para uma rotação completa */
+    }
+}
+
+
+
+/*--------------------------------*/
+
+.MinhaFotodePerfil {
+    width: 425px; /* Largura da imagem */
+    height: 425px; /* Altura da imagem */
+    border-radius: 50%; /* Moldura redonda */ 
+    margin-top: 20px; /* Espaço entre a imagem e o texto */
+    margin-left: 180px;
+    margin-bottom: 100px;
+    border: 2px solid #018DB0;
+}
+
+
+.Titulo {
+    align-self: stretch; 
+    color: #ffffff; 
+    font-size: 48px; 
+    font-family: var(--font-Oswald); 
+    font-weight: 700; 
+    line-height: 72px; 
+    word-wrap: break-word;
+}
+
+.Texto {
+    flex-direction: row;
+    align-self: stretch; 
+    color: #828282; 
+    font-size: 24px; 
+    font-family: var(--font-Oswald); 
+    font-weight: 400; 
+    line-height: 36px; 
+    word-wrap: break-word;
+}
+
+
+
+.BotãoPrimario {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #FDC435;
+    border-radius: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombreamento padrão */
+    gap: 30px;
+    
+}
+
+.BotãoPrimario:hover {
+    color: #fff;
+    background: #FDBB05;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombreamento no hover */
+}
+
+.BotãoPrimario:active {
+    transform: scale(1.1) translateY(5px); /* Efeito de afundamento quando clicado */
+    box-shadow: none; /* Remove o sombreamento quando clicado */
+    outline: none; /* Remove o contorno quando clicado */
+}
+
+
+
+.BotãoPrimario, .Texto {
+    color: #ffffff; 
+    font-size: 18px; 
+    font-family: var(--font-Inter);
+    font-weight: 500;
+    line-height: 27px; 
+    word-wrap: break-word
+    
+}
+
+/* CONFIGURAÇÃO DA ESTILIZAÇÃO DO BOTÃO ANIMADO DO SAIBA MAIS*/
+.animated-button {
+    background: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+ }
+
+.animated-button:hover {
+    color: #bd6e07;
+}
+
+.animated-button:active {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: left; 
+    margin-top: -35px; 
+    padding-left: 15px;
+    gap: 20px; 
+}
+
+/* Estilo adicional para separar os ícones do botão "Saiba mais" */
+.BotãoPrimario {
+    margin-bottom: 0px; 
+}
+
+.icone {
+    text-align: center;
+    margin-bottom: 0 20px; /* Espaçamento entre os ícones */
+    align-self: flex-end;
+    font-size: small;
+    
+    
+/*EFEITO DE CARTA GIRATORIA NOS ICONES DO CSS EM CONJUNTO DO JS*/
+    transition: transform 0.3s; /* Adiciona a transição para o efeito */
+    cursor: pointer; /* Altera o cursor para um indicador de link */
+}
+
+.icone a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-Inter);
+    
+}
+
+.icone img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: 2px; 
+    border: 2px solid #018DB0;
+}
+
+/*--Rodapé--------------------------------------------------*/
+
+footer {
+    display: block;
+    justify-content: center;
+    width: 100%; /* Ocupar toda a largura da página */
+    font-family: var(--font-Inter);
+    margin: auto 0;
+    padding: 18px;
+    padding-top: 30px;
+}
+
+.marcaDagua {
+    flex-direction: column;
+    text-align:center;
+    color: white;
+    font-size: 10px;
+    font-family: var(--font-Inter);
+    bottom: 5px;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*--------RESPONSIVIDADE------------------------------------*/
+
+/* Estilos para a versão mobile ou telas menores! */
+@media screen and (max-width: 1170px) {
+
+    .logo-container {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: #19191d;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-menu.active {
+        display:flex;
+        flex-direction:column;        
+    }
+
+    .nav-menu ul {
+        list-style: none;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        margin:auto 0;
+        gap: 20px;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    .BemVindoAoMeuSite {
+        width: 100%; 
+        height: 100%; 
+        text-align:center; 
+        color: #3BBADB; 
+        font-size: 70px; 
+        font-family: var(--font-Honk);
+        font-weight: 400; 
+        line-height: 90px; 
+        word-wrap: break-word"
+    }
+    
+    .OláMeuNomeERobert {
+        width: 98%;
+        height: 98%; 
+        text-align:center;
+        justify-content: center;
+        color: #018DB0; 
+        font-size: 67px; 
+        font-family: var(--font-Oswald);
+        font-weight: 700; 
+        line-height: 77px; 
+        word-wrap: break-word  
+    }
+
+    .PosicionadorDoSobreMim {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centralizar verticalmente */
+        text-align: center;
+        width: 100%; 
+        height: 100%; 
+        background: #19191d
+        
+    }
+    
+    .SobreMim {
+        display: inline-flex; /* Adiciona o flexbox ao container do texto e da imagem */
+        flex-direction: column; /* Alinha os elementos na vertical */
+        justify-content: flex-start;
+        align-items:baseline;
+        background: #19191d;
+        padding: 20px;
+        word-wrap: break-word;
+        max-width: 50%;
+        font-family: var(--font-Oswald);   
+    }
+
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .MinhaFotodePerfil {
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+    }
+
+
+
+/*--Rodapé--------------------------------------------------*/
+
+    footer {
+        display: block;
+        justify-content: center;
+        width: 100%; /* Ocupar toda a largura da página */
+        font-family: var(--font-Inter);
+        margin: auto 0;
+        padding: 18px;
+        padding-top: 30px;
+    }
+
+    .marcaDagua {
+        flex-direction: column;
+        text-align:center;
+        color: white;
+        font-size: 10px;
+        font-family: var(--font-Inter);
+        bottom: 5px;
+    }
+
+}
+/*----------------------------------------------------------*/
+
+
+
+
+/*Config para ajustar o botão "Saiba mais.." em outros tamanhos de tela :D (infelizmente não consegui fazer ele ficar alinhado verticalmente no centro da page em dispositivos menores usando tecnicas de flex)*/
+@media screen and (max-width: 1170px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 165px;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 140px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 110px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 85px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .BotãoPrimario {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+        margin-left: 45px;
+        margin-top: 5px;
+    }
+}

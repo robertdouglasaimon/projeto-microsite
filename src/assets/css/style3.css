@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sixtyfour&display=swap');
+
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-Honk:'Honk', system-ui;
+    --font-Inter:'Inter', sans-serif;
+    --font-Sixtyfour:'Sixtyfour', sans-serif;
+    --font-Oswald:'Oswald', sans-serif;
+}
+
+
+body {
+    color: white;
+    background-color: black;
+    font-family: var(--font-Oswald);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* tag para retirar as "bolinhas" */
+    align-items: center; 
+    padding: 16px;
+    font-family: var(--font-Oswald);
+    flex-wrap: wrap;
+}
+
+li {
+    margin: 0 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover { 
+    background-color: #42a1be;
+    border-bottom: 1px solid white; /*Efeito de sublinhar no hover.*/
+    padding: 8px 16px;
+}
+
+.hamburger-icon {
+    display:none;
+   
+}
+
+.container {
+    padding: 0px 50px; /*0px =  em cima e em baixo vai ter 0 pixels de padding. 50px = Esquerda e direita vão ter 50 pixels de padding*/
+}
+
+h1 {
+    color: #fff;    
+}
+
+.banner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container1 {
+    text-align: center;
+    font-size: 8em;
+    background-image: url(img/vscode-javascript-repl.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    border-bottom: 10px;
+}
+
+
+main  {
+    width: 1090px;
+    height: 119vh;     
+}
+
+.art {
+    font-family: var(--font-Inter);
+}
+
+/* Rodapé */
+
+footer {
+    justify-content: center;
+    font-family: var(--font-Inter);
+    width: 100%;
+}
+
+.RobertDouglas2023 {
+    display: flex;
+    color: #ffffff; 
+    font-size: 10px; 
+    font-family: var(--font-Inter); 
+    align-items: center;
+    text-align: center;
+    padding: 10px;  
+    margin: auto 0; 
+}
+
+/*---------------------------MOBILE------------------------*/
+
+/* NAV - MENU SUPERIOR -----------------------------------------------------------*/
+
+
+/* Estilos para a versão mobile (tela pequena) */
+@media (max-width: 1024px) {
+
+    .banner > img {
+        display: none;
+    }
+
+    .container1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    .art {
+        max-width: 90%;
+    }
+    
+    .art h3 {
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; 
+      
+    }
+     
+    .art p {
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding-right: 80px;
+      margin: auto 0;
+    }
+
+    .art > img {
+        text-align: center;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 200px;
+  }
+}
+
+/*--------------------------------------------------------*/
+
+
+@media screen and (max-width: 768px) {
+    /* Para a versão mobile, inicialmente oculte o menu de navegação */
+    .navbar ul {
+        display: none;
+    }
+
+    /* Estilize o ícone do menu de hambúrguer */
+    .menu-hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu-hamburger .bar {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 4px 0;
+    }
+
+    /* Estilize o menu de navegação ativo para a versão mobile */
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #19191d;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px; /* Ajuste a posição direita conforme necessário */
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    .banner > img {
+        display: none;
+    }
+
+    .container1 {
+        font-size: 65px;
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 80px;
+    }
+
+
+    .art {
+        max-width: 68%;
+        padding: 30px 0px;
+    }
+    
+    .art h3 {
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; 
+      
+    }
+     
+    .art p {
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding-right: 80px;
+      margin: auto 0;
+    }
+
+    .art > img {
+        text-align: center;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 450px;
+  }
+}
+/*--------------------------------------------------------*/
+
+@media screen and (max-width: 688px) {
+
+    .container1 {
+        font-size: 65px;
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-right: 140px;
+    }
+
+
+    .art {
+        max-width: 68%;
+        padding: 30px 0px;
+    }
+    
+    .art h3 {
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; 
+      
+    }
+     
+    .art p {
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+      word-wrap: break-word;
+      padding-right: 150px;
+      margin: auto 0;
+    }
+
+    .art > img {
+        text-align: center;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 530px;
+  }
+}
+
+/*--------------------------------------------------------*/
+
+@media (max-width: 440px) {
+    h1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+       padding-right: 410px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 410px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        padding-right: 100px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 790px;
+  }
+}
+
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+@media (max-width: 412px) {
+    h1 {
+        padding-left: 100px;
+    }
+
+    h2 {
+       padding-right: 445px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 445px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*------------------------------------------------*/
+
+@media (max-width: 393px) {
+    h1 {
+        padding-right: 500px;
+    }
+
+    h2 {
+       padding-right: 450px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 450px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 300px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*------------------------------------------------*/
+
+@media (max-width: 375px) {
+    h1 {
+        padding-right: 300px;
+    }
+
+    h2 {
+       padding-right: 480px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 480px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 360px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 830px;
+  }
+}
+
+/*---------------------------------------------------*/
+@media (max-width: 360px) {
+    h1 {
+        padding-left: 100px;
+    }
+
+    h2 {
+       padding-right: 480px;
+    }
+
+    h3 {
+       display: flex;
+       text-align: center;
+       padding-right: 480px;
+    }
+
+    .postIMG {
+        display: none;
+    }
+
+    .art p {
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        margin-right: 350px;
+        word-wrap: break-word;
+    }
+
+    .RobertDouglas2023 > p {
+        align-items: center;
+        margin-right: 850px;
+  }
+}
