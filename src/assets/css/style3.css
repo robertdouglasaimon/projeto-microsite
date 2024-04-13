@@ -307,19 +307,21 @@ footer {
 
 /*--------------------------------------------------------*/
 
-@media (max-width: 459px) {
+@media (max-width: 440px) {
     h1 {
-        padding-right: 400px;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     h2 {
-       padding-right: 430px;
+       padding-right: 410px;
     }
 
     h3 {
        display: flex;
        text-align: center;
-       padding-right: 430px;
+       padding-right: 410px;
     }
 
     .postIMG {
@@ -330,7 +332,8 @@ footer {
         display: flex;
         text-align: center;
         justify-content: center; 
-        margin-right: 350px;
+        margin-right: 300px;
+        padding-right: 100px;
         word-wrap: break-word;
     }
 
@@ -437,7 +440,7 @@ footer {
         display: flex;
         text-align: center;
         justify-content: center; 
-        margin-right: 300px;
+        margin-right: 360px;
         word-wrap: break-word;
     }
 
