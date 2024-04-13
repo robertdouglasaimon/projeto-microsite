@@ -24,7 +24,6 @@ body {
     min-width: 590px;
     background-color: #19191d;
     font-family: var(--font-Oswald);
-    overflow-x: hidden;
 }
 
 .logo-container {
