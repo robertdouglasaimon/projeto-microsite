@@ -24,8 +24,6 @@ fotoPerfil.addEventListener('mouseleave', () => {
     fotoPerfil.classList.remove('girar');
 });
 
-console.log
-
 
 // APLICANDO O EFEITO DE ROTAÇÃO DE IMAGEM NO ICONE COM A AJUDA DO CHAT GPT! //
 // EFEITO DE CARTA GIRANDO NA FOTO E NO FOOTER DO ''INICIO '' DO SITE //
